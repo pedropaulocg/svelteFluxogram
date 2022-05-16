@@ -1,6 +1,8 @@
 <script>
  	import Sidemenu from './components/Sidemenu.svelte'
 	import Card from './components/Card.svelte'
+	import Linha from "./components/Linha.svelte";
+
 	let idNumber = 1
 
 	let obj = [
@@ -11,7 +13,6 @@
 		idNumber++
 		obj.push({id: idNumber,text:'teste'})
 		obj = obj
-		console.log(obj)
 	}
 
 </script>
@@ -21,8 +22,12 @@
 	<Sidemenu on:click={addCard}/>
 	{#each obj as cardContent}
 		<Card content={cardContent.text} id={cardContent.idNumber}/>
+		<Linha topI={60} leftI={60}/>
 	{/each}
+	 
 	
+	
+
 
 </main>
 

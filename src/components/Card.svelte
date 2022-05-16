@@ -1,5 +1,4 @@
 <script>
-    import Linha from "./Linha.svelte";
 
     export let content
     export let id
@@ -36,9 +35,6 @@
 <div style="left:{coord.left}px; top:{coord.top}px" class="draggable" on:mousedown={start} id={id}>
     <h3>{content}</h3>
 </div>
-
-<Linha leftI={coord.left-30} topI={coord.top+70} leftF={60} topF={60}/>
-
 
 <style>
     .draggable {

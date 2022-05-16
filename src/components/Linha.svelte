@@ -1,9 +1,9 @@
 <script>
     
-    export let leftI
-    export let topI
-    export let leftF
-    export let topF
+    export let leftI = ''
+    export let topI = ''
+    export let leftF = '100'
+    export let topF = '100'
     
 
 </script>
