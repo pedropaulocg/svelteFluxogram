@@ -1,33 +1,24 @@
 <script>
-
+     
     export let content
     export let id
-    
 
-
-
-    let coord = {left: 60, top: 60}
-
+    let coord = {top: 60, left: 60}
     let moving = false
-
-
-
 
     function start () {
         moving = true
     }
-    
     function stop () {
         moving = false
     }
-
     function move (e) {
         if(moving) {
             coord.left += e.movementX
             coord.top += e.movementY
         }
     }
-    console.log(coord);
+    
 </script>
 
 <svelte:window on:mouseup={stop} on:mousemove={move} />

@@ -1,5 +1,5 @@
 <script>
-    
+
     export let leftI = ''
     export let topI = ''
     export let leftF = '100'
